@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mail Reader</h1>
+        
+        <!-- Email Reading Section -->
+        <section id="email-section">
+            <h2>Inbox</h2>
+            <div id="email-list"></div>
+            <button id="load-more">Load More</button>
+        </section>
+
+        <!-- Email Sending Section -->
+        <section id="send-email">
+            <h2>Send Email</h2>
+            <form id="send-email-form">
+                <label for="to">To:</label>
+                <input type="email" id="to" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Send Email</button>
+            </form>
+            <div id="send-status"></div>
+        </section>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
